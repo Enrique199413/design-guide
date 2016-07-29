@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Material Design for Bootstrap</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Mobile support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <script src="https://use.fontawesome.com/dab99c2cd9.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Material Design -->
+  <link href="dist/css/bootstrap-material-design.css" rel="stylesheet">
+  <link href="dist/css/ripples.min.css" rel="stylesheet">
+
+  <!-- Dropdown.js -->
+  <link href="//cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
+
+  <!-- Page style -->
+  <link href="index.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+</head>
+<body>
+  <style>
+    .hyper {
+      border-bottom: 10px solid #2C3E50;
+    }
+    .panel, .hyper {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+    body {
+      background-color: #ffffff !important;
+      color: #2b2b2b;
+    }
+    .navbar, .navbar.navbar-default {
+      background-color: #ffffff !important;
+    }
+    .color1 {
+      background: #00BFA5 !important;
+    }
+    .color2 {
+      background: #FFB300 !important;
+    }
+    .color3 {
+      background: #F44336 !important;
+    }
+    .color4 {
+      background: #2C3E50 !important;
+    }
+    .rule {
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background: red;
+      left: 30px;
+      top: 0;
+      z-index: 10000000000000000000;
+    }
+    .border-color1 {
+      border-bottom: 10px solid #00bfa5;
+    }
+    .border-color2 {
+      border-bottom: 10px solid #FFB300;
+    }
+    .window {
+      height: 500px;
+    }
+    .navbarapp {
+      height: 40px;
+      width: 100%;
+      background: #01579B;
+      color: white;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+    .fa {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .sidebarleft {
+      width: 170px;
+      height: 460px;
+      background: #F9F9F9;
+    }
+    .sidebarleft > p {
+      padding-left: 15px;
+      padding-top: 5px;
+    }
+    .sidebarright {
+      width: 200px;
+      border-left: 1px solid #bbbbbb;
+      height: 460px;
+      float: right;
+      margin-top: -460px;
+      padding: 15px;
+    }
+    .simulateDropdown {
+      border: 1px solid;
+      text-align: center;
+      border-radius: 2px;
+    }
+    .simulateButton {
+      text-transform: uppercase;
+      background: #01579b;
+      text-align: center;
+      width: 60px;
+      border-radius: 2px;
+      color: white;
+    }
+    .sidebarright > p > .fa {
+      float: right;
+    }
+    .content {
+      text-align: center;
+      margin-top: -460px;
+    }
+    .indications {
+      transform: rotate(90deg);
+      position: absolute;
+      font-size: 25pt;
+    }
+    .buttonFab {
+      border-radius: 50%;
+      background: #2196F3;
+      width: 45px;
+      height: 45px;
+      text-align: center;
+      padding-top: 15px;
+      margin-top: 280px;
+      position: absolute;
+      right: 217px;
+      color: white;
+    }
+    .topFix {
+      margin-top: 60px;
+    }
+    .buttons {
+      background: #01579b;
+      width: 100px;
+      text-align: center;
+      margin-left: 180px;
+      margin-top: 11px;
+      padding: 2px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      color: white;
+    }
+    .center {
+      margin-top: 90px;
+      font-size: 25pt;
+    }
+  </style>
+  <div class="rule"></div>
+  <div class="hyper">
+    <h1>Prestigos Design</h1>
+  </div>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="color1"><a href="#paleta">Paleta</a></li>
+          <li class="color2"><a href="#administracion">Reporte - Administración</a></li>
+          <li class="color3"><a href="#reportes">Reportes</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="panel border-color1" id="paleta">
+    <div class="panel-body">
+      <h2 class="panel-title">Paleta de colores</h2>
+      <p>La paleta de colores que usa prestigos-app es la siguiente:</p>
+      <h1>
+        <span class="label label-default color1">#00BFA5</span>
+        <span class="label label-default color2">#FFB300</span>
+        <span class="label label-default color3">#F44336</span>
+      </h1>
+    </div>
+  </div>
+  <div class="panel border-color2" id="administracion">
+    <div class="panel-body">
+      <h2 class="panel-title">General</h2>
+      <p>Estilo general para todas las apps:</p>
+      <div class="window">
+        <div class="navbarapp">
+          <span class="fa fa-bars"></span>
+          <span class="fa fa-home"></span>
+          Nombre del reporte
+        </div>
+        <div class="sidebarleft">
+          <p><span class="fa fa-pie-chart"></span>Menu</p>
+          <p><span class="fa fa-binoculars"></span>Menu</p>
+          <p><span class="fa fa-area-chart"></span>Menu</p>
+          <p><span class="fa fa-coffee"></span>Menu</p>
+          <p><span class="fa fa-gift"></span>Menu</p>
+          <span class="indications">Barra Izquierda</span>
+        </div>
+        <div class="sidebarright">
+          <p class="simulateDropdown">Información <span class="fa fa-caret-down"></span></p>
+          <p class="simulateDropdown">Selector 2 <span class="fa fa-caret-down"></span></p>
+          <p class="simulateButton">Button</p>
+          <p class="simulateButton" style="background:#F44336">Cancel</p>
+          <span class="buttonFab fa fa-plus"></span>
+          <span class="indications topFix">Barra derecha</span>
+        </div>
+        <div class="content">
+          <p class="buttons">Botones</p>
+          <p class="center">Contenido Reporte</p>
+        </div>
+      </div>
+      <h2>Paleta utilizada en esta vista</h2>
+      <h3>
+        <span class="label label-default" style="background:#01579B">#01579B</span>
+        <span class="label label-default" style="background:#2196F3">#2196F3</span>
+        <span class="label label-default" style="background:#F44336">#F44336</span>
+      </h3>
+    </div>
+  </div>
+  <div class="panel border-color2" id="reportes">
+    <div class="panel-body">
+      <h2 class="panel-title">Reportes</h2>
+      <p>Estilo general para todas las apps:</p>
+      <div class="window">
+        <div class="navbarapp" style="background: #2C3E50">
+          <span class="fa fa-bars"></span>
+          <span class="fa fa-home"></span>
+          Nombre del reporte
+        </div>
+        <div class="sidebarleft">
+          <p><span class="fa fa-pie-chart"></span>Menu</p>
+          <p><span class="fa fa-binoculars"></span>Menu</p>
+          <p><span class="fa fa-area-chart"></span>Menu</p>
+          <p><span class="fa fa-coffee"></span>Menu</p>
+          <p><span class="fa fa-gift"></span>Menu</p>
+          <span class="indications">Barra Izquierda</span>
+        </div>
+        <div class="sidebarright">
+          <p class="simulateDropdown">Información <span class="fa fa-caret-down"></span></p>
+          <p class="simulateDropdown">Selector 2 <span class="fa fa-caret-down"></span></p>
+          <p class="simulateButton">Button</p>
+          <p class="simulateButton" style="background:#F44336">Cancel</p>
+          <span class="buttonFab fa fa-plus"></span>
+          <span class="indications topFix">Barra derecha</span>
+        </div>
+        <div class="content">
+          <p class="buttons">Botones</p>
+          <p class="center">Contenido Reporte</p>
+        </div>
+      </div>
+      <h2>Paleta utilizada en esta vista</h2>
+      <h3>
+        <span class="label label-default" style="background:#2C3E50">#2C3E50</span>
+        <span class="label label-default" style="background:#2196F3">#2196F3</span>
+        <span class="label label-default" style="background:#F44336">#F44336</span>
+      </h3>
+    </div>
+  </div>
+<!-- Twitter Bootstrap -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Material Design for Bootstrap -->
+<script src="dist/js/material.js"></script>
+<script src="dist/js/ripples.min.js"></script>
+<script>
+  $.material.init();
+</script>
+
+
+<!-- Sliders -->
+<script>
+  $(function () {
+    $.material.init();
+  });
+</script>
+
+</body>
+</html>
