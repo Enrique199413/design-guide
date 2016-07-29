@@ -25,14 +25,166 @@
   <!-- Dropdown.js -->
   <link href="//cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
 
-  <!-- Page style -->
-  <link href="index.css" rel="stylesheet">
-
   <!-- jQuery -->
   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 
 </head>
 <body>
+  <style>
+    .hyper {
+      border-bottom: 0px solid black;
+      padding-bottom: 10px;
+      background-image: -webkit-linear-gradient(left, #2c3e50 25%,#2c3e50 25%,#ffb300 25%,#ffb300 50%,#ffb300 50%,#00bfa5 50%,#00bfa5 75%,#f44336 75%,#f44336 100%);
+      background-size: 50% 10px;
+      -moz-background-size: 50% 10px;
+    }
+    .panel-title {
+      font-size: 20px !important;
+    }
+    .panel, .hyper {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+    .horizontal > span{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .horizontal{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .text-child {
+      font-size: 12pt;
+    }
+
+
+    body {
+      background-color: #ffffff !important;
+      color: #2b2b2b;
+    }
+    .navbar-nav {
+      margin-left: calc(50% - 175px) !important;
+    }
+    .navbar, .navbar.navbar-default {
+      background-color: #ffffff !important;
+    }
+    .color1 {
+      background: #00BFA5 !important;
+    }
+    .color2 {
+      background: #FFB300 !important;
+    }
+    .color3 {
+      background: #F44336 !important;
+    }
+    .color4 {
+      background: #2C3E50 !important;
+    }
+    .rule {
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background: transparent;
+      left: 30px;
+      top: 0;
+      z-index: 10000000000000000000;
+    }
+    .inner-title {
+      padding-left: 12px;
+      padding-top: 10px;
+    }
+
+    .window {
+      height: 500px;
+    }
+    .navbarapp {
+      height: 40px;
+      width: 100%;
+      background: #01579B;
+      color: white;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+    .fa {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .sidebarleft {
+      width: 170px;
+      height: 460px;
+      background: #F9F9F9;
+    }
+    .sidebarleft > p {
+      padding-left: 15px;
+      padding-top: 5px;
+    }
+    .sidebarright {
+      width: 200px;
+      border-left: 1px solid #bbbbbb;
+      height: 460px;
+      float: right;
+      margin-top: -460px;
+      padding: 15px;
+    }
+    .simulateDropdown {
+      border: 1px solid;
+      text-align: center;
+      border-radius: 2px;
+    }
+    .simulateButton {
+      text-transform: uppercase;
+      background: #01579b;
+      text-align: center;
+      width: 60px;
+      border-radius: 2px;
+      color: white;
+    }
+    .sidebarright > p > .fa {
+      float: right;
+    }
+    .content {
+      text-align: center;
+      margin-top: -460px;
+    }
+    .indications {
+      transform: rotate(90deg);
+      position: absolute;
+      font-size: 25pt;
+    }
+    .buttonFab {
+      border-radius: 50%;
+      background: #2196F3;
+      width: 45px;
+      height: 45px;
+      text-align: center;
+      padding-top: 15px;
+      margin-top: 280px;
+      position: absolute;
+      right: 217px;
+      color: white;
+    }
+    .topFix {
+      margin-top: 60px;
+    }
+    .buttons {
+      background: #01579b;
+      width: 100px;
+      text-align: center;
+      margin-left: 180px;
+      margin-top: 11px;
+      padding: 2px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      color: white;
+    }
+    .center {
+      margin-top: 90px;
+      font-size: 25pt;
+    }
+
+  </style>
   <div class="rule"></div>
   <div class="hyper">
   </div>
